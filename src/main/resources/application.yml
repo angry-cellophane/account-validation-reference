@@ -1,0 +1,13 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: localTest
+
+app:
+  providers:
+    - url: http://localhost:9090/api1
+      name: provider1
+    - url: http://localhost:9090/api2
+      name: provider2
+---
